@@ -1,9 +1,9 @@
 include { hello } from './modules/foo'
-include { hello1 } from './modules/bar'
+include { align_and_call } from './modules/bar'
 
 workflow {
   hello()
-  hello1()
+  align_and_call()
 }
 
 

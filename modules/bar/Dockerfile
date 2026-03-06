@@ -1,3 +1,6 @@
-FROM busybox
+FROM alpine
 
-RUN echo hello 
+RUN apk update && apk add --no-cache \
+    bash \
+    samtools \
+    bcftools
