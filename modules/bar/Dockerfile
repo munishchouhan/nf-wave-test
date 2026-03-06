@@ -1,6 +1,6 @@
-FROM alpine
+FROM debian:bookworm-slim
 
-RUN apk update && apk add --no-cache \
-    bash \
+RUN apt-get update && apt-get install -y --no-install-recommends \
     samtools \
-    bcftools
+    bcftools \
+    && rm -rf /var/lib/apt/lists/*
