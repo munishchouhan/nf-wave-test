@@ -1,6 +1,1 @@
-FROM debian:bookworm-slim
-
-RUN apt-get update && apt-get install -y --no-install-recommends \
-    samtools \
-    bcftools \
-    && rm -rf /var/lib/apt/lists/*
+FROM biocontainers/samtools:v1.9-4-deb_cv1
