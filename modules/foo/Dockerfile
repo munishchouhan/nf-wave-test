@@ -1,6 +1,6 @@
 FROM alpine 
 
-RUN apk update && apk add bash cowsay \
+RUN apk update && apk add bash procps cowsay \
         --update-cache \
         --repository https://dl-cdn.alpinelinux.org/alpine/edge/community \
         --repository https://dl-cdn.alpinelinux.org/alpine/edge/main \
